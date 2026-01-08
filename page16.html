@@ -64,6 +64,32 @@
 
 </head>
 
+<style>
+body {
+  background: #cfcfcf;
+  font-family: Courier New, monospace;
+}
+
+.pester-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
+  font-family: Courier New, monospace;
+  cursor: pointer;
+}
+
+.pesterchat {
+  width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px dashed #999;
+}
+
+.go { color: #F22B05; }
+.dl { color: #F2F205; }
+</style>
+  
 <body>
 
 <div class="page">
@@ -80,16 +106,22 @@
     <img src="NScenePDA.png">
   </div>
 
- <p>
-  <a href="#" onclick="toggleChat(); return false;">Open chat</a>
-</p>
+<!-- BOTÓN -->
+<button id="chatToggle" class="pester-btn">Open chat</button>
 
-<div id="chat" class="chatlog">
-  <p class="nath">nAth: hEy… ¿eStAs aHí?</p>
-  <p class="jos">JOS: sí. ¿qué pasa?</p>
-  <p class="nath">nAth: eStO nO eS nOrMaL</p>
+<!-- CAJA DE CHAT -->
+<div id="pesterchat" class="pesterchat" style="display:none;">
+  <p class="go">GO:HAAAII GOODMEOWING!! .</p>
+  <p class="dl">DL: HAIAHIA! how are you is evryrhign okay?? :D.</p>
+  <p class="tt">GO: YES.. kinda, my grandma keeps with her religion stuff im getting tired of it...</p>
+  <p class="eb">DL: >:c ngfdhnfg and.. have you eaten something??</p>
+  <p class="tt">GO: ....no....</p>
+  <p class="eb">DL: WHAT why not?? ;c</p>
+  <p class="tt">GO: my grandma...  ill see if i can go eat something okay??</p>
+  <p class="eb">DL: OKAY!! text me back when youre finished! I LOVE TOU SOMCUH!!</p>
+  <p class="tt">GO: OKAY I WILL I LVOE YOU TOO!! :3</p>
+  <p>--chat ended--</p>
 </div>
-
 
   <div class="next">
     <a href="page17.html"> Check her messages </a>
@@ -97,5 +129,20 @@
 
 </div>
 
+<script>
+const btn = document.getElementById("chatToggle");
+const chat = document.getElementById("pesterchat");
+
+btn.onclick = () => {
+  if (chat.style.display === "none") {
+    chat.style.display = "block";
+    btn.textContent = "Close Chat";
+  } else {
+    chat.style.display = "none";
+    btn.textContent = "Open Chat";
+  }
+};
+</script>
+  
 </body>
 </html>
