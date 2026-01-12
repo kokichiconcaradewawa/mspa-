@@ -52,25 +52,10 @@
   }
 </style>
 </head>
-
-<script>
-function continueStory() {
-  const save = localStorage.getItem("mspaSave");
-  if (save) {
-    window.location.href = save;
-  } else {
-    window.location.href = "page1.html";
-  }
-}
-</script>
-  
+ 
 <body>
 
 <div class="page">
-
-  <div class="command">
-    &gt; N: mirar alrededor
-  </div>
 
   <div class="panel">
     <img src="NSceneNeg.png">
@@ -90,8 +75,7 @@ function continueStory() {
 
 </div>
 
-  <a href="#" onclick="continueStory()">Continue</a>
-
 </body>
 </html>
+
 
