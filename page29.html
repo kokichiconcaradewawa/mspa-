@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MSPA???</title>
+
+<style>
+  body {
+    background-color: #c6c6c6; /* gris MSPA */
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    background: white;
+    width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .panel {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .panel img {
+    max-width: 100%;
+  }
+
+  .command {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .nath {
+    color: #3aaaff;
+  }
+
+  .next {
+    margin-top: 20px;
+  }
+
+  a {
+    color: #0000ee;
+    text-decoration: underline;
+  }
+
+         .back {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .pester-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 4px 8px;
+  font-family: Courier New, monospace;
+  cursor: pointer;
+}
+
+.pesterchat {
+  width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px dashed #999;
+  font-family: Courier New, monospace;
+  font-size: 13px;
+}
+
+.go { color: #F22B05; }  
+.dl { color: #ADAD18; }  
+
+</style>
+</head>
+
+<!-- esto es pa serrar-->
+  
+<script>
+function toggleChat2() {
+  const chat = document.getElementById("pesterchat2");
+  if (chat.style.display === "none") {
+    chat.style.display = "block";
+  } else {
+    chat.style.display = "none";
+  }
+}
+</script>
+
+  <!-- asta aki-->
+  
+<body>
+
+<div class="page">
+
+  <div class="command">
+    &gt; check your phone
+  </div>
+  
+  <div class="panel">
+    <img src="past.png">
+  </div>
+
+  <!--desde aqui para la caja de caht -->
+
+<button class="pester-btn" onclick="toggleChat2()">Open chat</button>
+
+<div id="pesterchat2" class="pesterchat" style="display:none;">
+  <p class="go">GO: sorry i was just joking, is everythign okay? :c</p>
+  <p class="dl">DL: ....yes , yes ;D</p>
+  <p class="go">GO: no you´re not</p>
+  <p class="dl">DL: :c</p>
+  <p class="go">GO: you know you can tell me anything, even if it is weird, nonsense or even something stupid, you can always come here and ill listen :3</p>
+</div>
+
+  <!--asta aki xdxd -->
+
+<br>
+
+
+    <br><br>
+   
+  
+
+  <div class="next">
+    <a href="page30.html">== &gt;</a>
+  </div>
+
+  <div class="back">
+    <a href="index.html">Start Over | </a>
+    <a href="page28.html">Go back  </a> 
+  </div> 
+</div>
+    </div>
+
+</body>
+
+</html>
